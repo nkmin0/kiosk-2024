@@ -1,7 +1,11 @@
 # kiosk-2024
 2024년 메이커즈 키오스크 프로젝트
 
+---
+
 ## YOLOv5 모델로 객체인식하기
+
+---
 
 ### 1. yolo모델 불러오기
 
@@ -15,6 +19,8 @@ vscode 터미널에서 위 코드 실행
 ![image](https://github.com/user-attachments/assets/7d605706-f055-4277-bf26-c72c898795aa)
 
 git clone을 하면 위 그림같이 다양한 폴더가 생긴다. 이 yolov5 폴더안에 train, vaild 폴더를 넣어야지 학습을 할 수 있다.
+
+---
 
 ### 2. 데이터 수집 및 라벨링
 
@@ -98,6 +104,18 @@ YOLO 체크해서 Export
 이 코드처럼 train 이랑 vaild 폴더 경로 적어주고
 
 앞서 라벨링 했던 목록 txt파일이랑 똑같은! 순서로 만들어주면 된다. nc는 클래스 개수
+
+---
+
+### 4. 모델 학습
+
 ```
+cd yolov5
+```
+
+![image](https://github.com/user-attachments/assets/530926cc-da95-4ca3-82c9-e2c60559e1c0)
+
+이런식으로 yolov5 로 들어가서 명령어를 입력해야 한다.
+
 
 
