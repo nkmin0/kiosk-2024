@@ -31,11 +31,9 @@ start = start_min * 60 + start_sec
 finish = finish_min * 60 + finish_sec
 
 # 각자 영상 경로에 맞추어 수정
-# video_path = f"D:/KIOSK_dataset/sensor_image_{video_num}.mp4"
-video_path = "C:/Users/user/Desktop/kiosk/yolov5/runs/detect/exp7/sensor_image_6.mp4"
+video_path = f"D:/KIOSK_dataset/sensor_image_{video_num}.mp4"
+img_path = f"C:/Users/user/Desktop/kiosk/temp_dataset"
 
-
-img_path = f"D:\KIOSK_image"
 os.makedirs(img_path, exist_ok=True)
 
 try:
