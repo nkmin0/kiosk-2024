@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rental Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Waiting for object recognition...</h1>
+        <div class="mt-4">
+            <img src="{{ url_for('video_feed') }}" width="640" height="480" class="img-fluid border">
+        </div>
+        <button onclick="location.href='{{ url_for('rental_complete_page') }}'">Next</button>
+    </div>
+</body>
+</html>

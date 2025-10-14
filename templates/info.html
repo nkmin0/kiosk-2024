@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Info Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Scan your RFID card</h1>
+        <p>Place your RFID card on the sensor.</p>
+
+        <!-- Button to proceed, hidden by default -->
+        <button id="next-btn" onclick="location.href='{{ url_for('loading_page') }}'" 
+                class="btn btn-primary mt-3" style="display: none;">Proceed to Next Step</button>
+    </div>
+
+    <script>
+        // Function to check if RFID has been scanned
+        function checkRFID() {
+            $.getJSON("{{ url_for('get_rfid') }}", function(data) {
+                if (data.rfid_scanned) {
+                    // Show the button if RFID is scanned
+                    document.getElementById("next-btn").style.display = "block";
+                }
+            });
+        }
+
+        // Call checkRFID every 0.1 second
+        setInterval(checkRFID, 100);
+    </script>
+</body>
+</html>
+

@@ -49,4 +49,4 @@ move_files(train_files, train_path)
 move_files(valid_files, valid_path)
 move_files(test_files, test_path)
 
-print("데이터 분할 완료!")
+print("데이터 분할 완료")

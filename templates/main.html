@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="C:\Users\rmsxo\kiosk\static\style.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>공학 부품 키오스크</h1>
+        <div class="container">
+            <img src="https://cafe24.poxo.com/ec01/daduino/jNWAR67N/rbqGfE/mXzgXTCVyJZp+ClH6pltfznTg0Fb1Fo/13V1X8zuX750QVA3u4DPiWTjaJ9OdTPOLSna6g==/_/web/product/big/201803/1409_shop1_395170.png">
+        </div>
+        <button onclick="location.href='{{ url_for('rental_page') }}'" class="btn btn-primary" style="width:150px; height:90px; font-size: larger;">대여하기</button>
+        <button onclick="location.href='{{ url_for('return_page') }}'" class="btn btn-secondary" style="width:150px; height:90px; font-size: larger;">반납하기</button>
+        <h2>Made by Makers</h2>
+    </div>
+</body>
+</html>x
