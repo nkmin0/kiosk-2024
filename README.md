@@ -1,4 +1,4 @@
-# kiosk-2024
+# 2024_KSIOK
 2024년 메이커즈 키오스크 프로젝트
 
 ---
@@ -117,5 +117,20 @@ cd yolov5
 
 이런식으로 yolov5 로 들어가서 명령어를 입력해야 한다.
 
+```python
+img_size = 640
+batch_size = 16
+epochs = 100
+data_path = "data/data.yaml"
+cfg_path = "models/yolov5s.yaml"
+weights_path = "weights/yolov5s.pt"
+#weights_path = "runs/train/kiosk_v4.1/weights/best.pt"
+name = "kiosk_v6.0"
 
+
+command = f"python train.py --img {str(img_size)} --batch {str(batch_size)} --epochs {str(epochs)} --data {data_path} --cfg {cfg_path} --weights {weights_path} --name {name}"
+
+print(command)
+```
+이와 같이 파라미터를 조절하여 학습할 수 있다.
 

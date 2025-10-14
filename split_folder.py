@@ -10,7 +10,7 @@ train_path = f'{output_path}/train'
 valid_path = f'{output_path}/valid'
 test_path = f'{output_path}/test'
 
-# 비율 설정 (예: 70% train, 20% valid, 10% test)
+# 비율 설정
 train_ratio = 0.8
 valid_ratio = 0.15
 test_ratio = 0.05
